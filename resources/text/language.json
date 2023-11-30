@@ -1,0 +1,70 @@
+
+
+{
+  "eng": {
+    "title": "The Speech banana is the yellow area where most speech sounds, like \"la-la-la\" or \"ba-ba-ba,\" are heard.",
+    "y-axis": "LOUDER SOUND",
+    "x-axis": "HIGHER SOUND",
+    "start-here": "Start here!",
+    "speaker": "MUTE/UNMUTE",
+    "dripping": "Dripping",
+    "line-phone": "Line phone",
+    "chirping": "Chirping",
+    "crickets": "Crickets",
+    "motorbike": "Motorbike"
+  },
+
+  "swe": {
+    "title": "Speech banana är det gula området där de flesta tal ljud, som \"la-la-la\" eller \"ba-ba-ba,\" hörs.",
+    "y-axis": "HÖGRE LJUD",
+    "x-axis": "HÖGRE FREKVENS",
+    "start-here": "Starta här!",
+    "speaker": "AV/PÅ",
+    "dripping": "Droppande",
+    "line-phone": "Linjetelefon",
+    "chirping": "Kvitter",
+    "crickets": "Syrsor",
+    "motorbike": "Motorcykel"
+  },
+
+  "dan": {
+    "title": "Speech banana er det gule område, hvor de fleste talelyde, som \"la-la-la\" eller \"ba-ba-ba,\" høres.",
+    "y-axis": "HØJERE LYD",
+    "x-axis": "HØJERE FREKVENS",
+    "start-here": "Start her!",
+    "speaker": "LYDLØS/LYD",
+    "dripping": "Drypning",
+    "line-phone": "Linjetelefon",
+    "chirping": "Kvitter",
+    "crickets": "Cikader",
+    "motorbike": "Motorcykel"
+  },
+
+  "fin": {
+    "title": "Puhebanaani on keltainen alue, jossa useimmat puheäänet, kuten \"la-la-la\" tai \"ba-ba-ba,\" kuuluvat.",
+    "y-axis": "KOVEMPI ÄÄNI",
+    "x-axis": "YLÖS TAAJUUS",
+    "start-here": "Aloita tästä!",
+    "speaker": "ÄÄNI PÄÄLLE/POIS",
+    "dripping": "Tippuminen",
+    "line-phone": "Puhelinlinja",
+    "chirping": "Siritys",
+    "crickets": "Sirkat",
+    "motorbike": "Moottoripyörä"
+  },
+
+  "nor": {
+    "title": "Speech banana er det gule området der de fleste talelydene, som \"la-la-la\" eller \"ba-ba-ba,\" høres.",
+    "y-axis": "HØYERE LYD",
+    "x-axis": "HØYERE FREKVENS",
+    "start-here": "Start her!",
+    "speaker": "LYDLØS/LYD",
+    "dripping": "Drypping",
+    "line-phone": "Telefonlinje",
+    "chirping": "Kvitrer",
+    "crickets": "Sirisser",
+    "motorbike": "Motorsykkel"
+  }
+
+}
+

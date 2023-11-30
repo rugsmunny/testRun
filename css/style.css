@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#outer_container {
+    display: flex;
+}
+
+#speech_banana_container {
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 2rem;
+    width: 100rem;
+    overflow-x: scroll;
+
+}
+
+#speech_banana {
+    width: 77rem;
+    height: 44rem;
+    justify-items: end;
+    align-items: center;
+    z-index: 2;
+}
+
+#graph {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr 2.5fr 2.7fr 0.7fr 2fr);
+    gap: 0.5rem;
+    width: 77rem;
+    height: 44rem;
+    justify-items: end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-image: url("../resources/img/graphBackground/SpeechBananaLineGraph.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+
+/*
+Speech Banana shortened to sb here on out
+*/
+
+.sb_sound_btn {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background: #06651C;
+    border-radius: 6.25rem;
+    border-bottom: 2px solid #4F4747;
+    transition-duration: 0.3s;
+    width: 11rem;
+
+}
+
+.sb_sound_btn_cancel {
+
+}
+
+.sb_sound_btn_icon {
+    display: flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.sb_sound_btn_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0.00625rem;
+}
+
+.sb_sound_btn:hover {
+    transition-duration: 0.7s;
+    background: #00B45C;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+#sp_start_here_btn_container {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0.5rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: #06651C;
+    margin-bottom: 2.5rem;
+
+}
+
+#sp_start_here_btn_container > p {
+    margin: 0.2rem 0 0.5rem 0.25rem;
+    align-self: flex-start;
+}
+
+#sp_start_here_btn_container > div {
+    border: 2px solid #FFF;
+}
+
+#sp_start_here_btn_container > div:hover {
+    border: 2px solid #06651C;
+}
+
+#speech_banana_title {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 1rem 0 1rem;
+}
+
+#speech_banana_title > p {
+    color: #9B9B9B;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
+}
+
+#banana {
+    z-index: -1;
+    width: 46.08338rem;
+    height: 21.30456rem;
+    position: absolute;
+    left: 14.16663rem;
+    top: 9rem;
+    fill: #FFEB3B;
+
+}
+
+
+#mute_container {
+    align-self: flex-start;
+    display: inline-flex;
+    gap: 0.5rem;
+
+}
+
+#mute_btn {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.75rem 0.58088rem 0.79081rem 0.5625rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9.375rem;
+    background: #FC920D;
+    cursor: pointer;
+}
+
+#mute_container > p {
+    color: #9B9B9B;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto, sans-serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 0.0625rem;
+}
+
+
+.axis_text {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.y_axis {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    height: fit-content;
+    left: 1rem;
+    top: 26rem;
+    position: absolute;
+}
+
+.x_axis {
+    margin-top: 1rem;
+
+}
+
+
+
+
+.axis_text {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.axis_text > p {
+    color: #9B9B9B;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 0.0625rem;
+}
+
+
+.y_axis > img {
+    transform: rotate(180deg);
+}
+
+
+.axis_text > img {
+    stroke-width: 2px;
+    stroke: #9B9B9B;
+}
+
+#tooltip_container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+
+}
+
+#tooltip {
+    display: flex;
+    padding: 0.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0.5rem;
+    background: #191C19;
+}
+#tooltip > p {
+    display: flex;
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+#tooltip-arrow {
+    width: 1rem;
+    height: 0.5rem;
+    fill: #191C19;
+}
+
+#language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    width: 20rem;
+}
+
+#language > img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
