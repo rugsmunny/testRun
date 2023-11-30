@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => checkUserMedia);
 
+document.addEventListener('DOMContentLoaded', checkUserMedia);
 function checkUserMedia() {
+    
     const regex = 'Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini';
-    if(regex.test(navigator.userAgent)) {
-        console.log('Mobile device detected');
+    if(navigator.userAgent.includes(regex)) {
         document.querySelector('#speech_banana_container').style.overflowX = 'scroll';
     }
 }
