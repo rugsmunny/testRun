@@ -1,7 +1,7 @@
 
 
 {
-  "eng": {
+  "en": {
     "title": "The Speech banana is the yellow area where most speech sounds, like \"la-la-la\" or \"ba-ba-ba,\" are heard.",
     "y-axis": "LOUDER SOUND",
     "x-axis": "HIGHER SOUND",
@@ -14,7 +14,7 @@
     "motorbike": "Motorbike"
   },
 
-  "swe": {
+  "sv": {
     "title": "Speech banana är det gula området där de flesta tal ljud, som \"la-la-la\" eller \"ba-ba-ba,\" hörs.",
     "y-axis": "HÖGRE LJUD",
     "x-axis": "HÖGRE FREKVENS",
@@ -27,7 +27,7 @@
     "motorbike": "Motorcykel"
   },
 
-  "dan": {
+  "da": {
     "title": "Speech banana er det gule område, hvor de fleste talelyde, som \"la-la-la\" eller \"ba-ba-ba,\" høres.",
     "y-axis": "HØJERE LYD",
     "x-axis": "HØJERE FREKVENS",
@@ -40,7 +40,7 @@
     "motorbike": "Motorcykel"
   },
 
-  "fin": {
+  "fi": {
     "title": "Puhebanaani on keltainen alue, jossa useimmat puheäänet, kuten \"la-la-la\" tai \"ba-ba-ba,\" kuuluvat.",
     "y-axis": "KOVEMPI ÄÄNI",
     "x-axis": "YLÖS TAAJUUS",
@@ -53,7 +53,7 @@
     "motorbike": "Moottoripyörä"
   },
 
-  "nor": {
+  "no": {
     "title": "Speech banana er det gule området der de fleste talelydene, som \"la-la-la\" eller \"ba-ba-ba,\" høres.",
     "y-axis": "HØYERE LYD",
     "x-axis": "HØYERE FREKVENS",
