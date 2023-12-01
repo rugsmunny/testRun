@@ -95,6 +95,7 @@ Speech Banana shortened to sb here on out
     font-weight: 500;
     line-height: 1.25rem;
     letter-spacing: 0.00625rem;
+    white-space: nowrap;
 }
 
 .sb_sound_btn:hover {
