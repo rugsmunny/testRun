@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
 
 #speech_banana_container {
-
-    display: inline-flex;
-    flex-flow: row nowrap;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding-top: 2rem;
+}
 
-
-
+#speech_banana_container * {
+    flex-shrink: 1;
+    flex-wrap: nowrap;
 }
 
 #speech_banana {
@@ -21,39 +25,103 @@
     gap: 0.5rem;
     justify-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    width: 87.5625rem;
-    height: 56.25rem;
-    overflow: visible;
+    align-items: start;
 
+}
+#speech_banana_title {
+    margin-right: 7rem;
+    align-self: center;
+}
 
-
+.title {
+    color: #9B9B9B;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
 }
 
 #graph {
+
     display: grid;
-    grid-template-columns: repeat(1, 1.7fr 2.5fr 0fr 2.5fr 1fr 2fr );
-    gap: 0.5rem;
-    width: 87.5625rem;
-    height: 56.25rem;
-    justify-items: end;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 1;
+    grid-template-rows: repeat(1, 1.8fr 3fr 0.5fr 1.2fr);
+    width: 81.125rem;
+    height: 43.75rem;
+    justify-items: start;
     background-image: url("../resources/img/graphBackground/SpeechBananaLineGraph.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 2rem;
+    padding-left: 6.5rem;
+    overflow: visible;
 }
 
 
-/*
-Speech Banana shortened to sb here on out
-*/
+#outer_graph {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.sound_btn_row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 2.1fr 2fr 1fr 1.5fr 0.3fr);
+    gap: 0.4rem;
+    justify-items: end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.axis_text {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.y_axis {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    height: fit-content;
+    align-self: center;
+    margin-right: -4rem;
+}
+
+.x_axis {
+    margin: 1rem 7rem 0 0;
+    align-self: center;
+}
+
+
+.axis_text > p {
+    color: #9B9B9B;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-variant: all-small-caps;
+    letter-spacing: 0.0625rem;
+}
+
+
+.y_axis > img {
+    transform: rotate(180deg);
+}
+
+
+.axis_text > img {
+    stroke-width: 2px;
+    stroke: #9B9B9B;
+}
+
+/*Speech Banana shortened to sb here on out*/
+
 
 .sb_sound_btn {
     display: flex;
@@ -69,10 +137,6 @@ Speech Banana shortened to sb here on out
     transition-duration: 0.3s;
 
 
-
-}
-
-.sb_sound_btn_cancel {
 
 }
 
@@ -128,21 +192,7 @@ Speech Banana shortened to sb here on out
     border: 2px solid #06651C;
 }
 
-#speech_banana_title {
 
-    display: inline-flex;
-}
-
-#speech_banana_title > p {
-    color: #9B9B9B;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Roboto, sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.0625rem;
-}
 
 
 
@@ -150,6 +200,7 @@ Speech Banana shortened to sb here on out
     align-self: start;
     display: inline-flex;
     gap: 0.5rem;
+    margin-left: 2.5rem;
 
 
 }
@@ -179,55 +230,7 @@ Speech Banana shortened to sb here on out
 }
 
 
-.axis_text {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    white-space: nowrap;
-}
-.y_axis {
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    height: fit-content;
-    align-self: center;
-}
 
-.x_axis {
-    margin-top: 1rem;
-}
-
-
-
-
-.axis_text {
-
-    align-items: center;
-    gap: 0.5rem;
-}
-
-
-.axis_text > p {
-    color: #9B9B9B;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Roboto, sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-variant: all-small-caps;
-    letter-spacing: 0.0625rem;
-}
-
-
-.y_axis > img {
-    transform: rotate(180deg);
-}
-
-
-.axis_text > img {
-    stroke-width: 2px;
-    stroke: #9B9B9B;
-}
 
 #tooltip_container {
     display: none;
@@ -287,4 +290,18 @@ Speech Banana shortened to sb here on out
     justify-content: space-between;
     width: 100rem;
     margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    body,html {
+        overflow-x: scroll;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    body,html  {
+        height: 100vh;
+        width: 100vw;
+    }
 }
